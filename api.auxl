@@ -1,0 +1,158 @@
+CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%{
+  "encodedBy" : 6,
+  "projectID" : "CB45FA69-ACE9-4855-B165-CC72EEBAC0C1",
+  "data" : {
+    "documentVersionCode" : 2,
+    "id" : "CB45FA69-ACE9-4855-B165-CC72EEBAC0C1",
+    "options" : {
+      "holder" : {
+        "project.options.description" : "",
+        "project.options.zoomLevel" : "MTAw",
+        "project.options.secureValuesStoreEncrypted" : "MQ==",
+        "project.options.storeEncrypted" : "MA=="
+      },
+      "flags" : {
+
+      },
+      "storeEncrypted" : true
+    },
+    "configurations" : [
+      {
+        "id" : "7gm4np",
+        "name" : "Default",
+        "selected" : true,
+        "variables" : {
+          "type" : 0,
+          "elements" : [
+            {
+              "id" : "9E843408-3241-4A1B-96AD-764E37840DB4",
+              "keyAlias" : null,
+              "descr" : "",
+              "value" : "http:\/\/localhost:3000",
+              "flags" : [
+                3,
+                2
+              ],
+              "key" : "api_srv",
+              "storeEncrypted" : false
+            },
+            {
+              "id" : "DF80BE6D-76C6-4217-82B2-EFF45505AB04",
+              "keyAlias" : null,
+              "descr" : "",
+              "value" : "",
+              "flags" : [
+                3,
+                2
+              ],
+              "key" : "",
+              "storeEncrypted" : false
+            }
+          ]
+        }
+      }
+    ],
+    "nodeEntries" : [
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[33.5,10]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "requestnode.property",
+            "value" : "{\"options\":{\"holder\":{\"request.options.inferContentType\":\"MQ==\",\"request.options.sendDefaultHeaders\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":0,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/test\",\"fieldFlags\":[2,5]}"
+          }
+        ],
+        "nodeId" : "ibks64",
+        "nodeType" : 1
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[33.5,162]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "outnode.property",
+            "value" : "{\"options\":{\"holder\":{\"outnode.options.lineNumberEnabled\":\"MQ==\",\"outnode.options.highlightEnabled\":\"MQ==\",\"outnode.options.renderMarkdown\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "f83iou",
+        "nodeType" : 5
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[33.5,86]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "runnernode.property",
+            "value" : "{\"optionHolder\":{\"holder\":{\"runner.options.maxRedirects\":\"MTA=\",\"runner.options.clientCertificatePassphrase\":\"\",\"runner.options.storeCookies\":\"MQ==\",\"runner.options.followRedirects\":\"MQ==\",\"runner.options.redirectAuth\":\"MA==\",\"runner.options.sendCookies\":\"MQ==\",\"runner.options.redirectOriginalMethod\":\"MA==\",\"runner.options.sslEnabled\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "d5vxoa",
+        "nodeType" : 15
+      }
+    ],
+    "linkEntries" : [
+      {
+        "portFrom" : {
+          "nodeId" : "ibks64",
+          "portId" : "ibks64_25_1"
+        },
+        "portTo" : {
+          "nodeId" : "d5vxoa",
+          "portId" : "d5vxoa_25_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "d5vxoa",
+          "portId" : "d5vxoa_8_1"
+        },
+        "portTo" : {
+          "nodeId" : "f83iou",
+          "portId" : "f83iou_14_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "d5vxoa",
+          "portId" : "d5vxoa_12_1"
+        },
+        "portTo" : {
+          "nodeId" : "f83iou",
+          "portId" : "f83iou_14_0"
+        }
+      }
+    ]
+  },
+  "encrypted" : false,
+  "versionCode" : 2
+}
