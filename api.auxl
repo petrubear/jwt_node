@@ -95,73 +95,7 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[31,59]"
-          },
-          {
-            "key" : "node.enabled",
-            "value" : "true"
-          },
-          {
-            "key" : "requestnode.property",
-            "value" : "{\"options\":{\"holder\":{\"request.options.inferContentType\":\"MQ==\",\"request.options.sendDefaultHeaders\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/token\",\"fieldFlags\":[2,5]}"
-          }
-        ],
-        "nodeId" : "8l321r",
-        "nodeType" : 1
-      },
-      {
-        "nodeProperties" : [
-          {
-            "key" : "node.label",
-            "value" : "\"\""
-          },
-          {
-            "key" : "node.canvas.origin",
-            "value" : "[36.5,306]"
-          },
-          {
-            "key" : "node.enabled",
-            "value" : "true"
-          },
-          {
-            "key" : "requestnode.property",
-            "value" : "{\"options\":{\"holder\":{\"request.options.inferContentType\":\"MQ==\",\"request.options.sendDefaultHeaders\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":0,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/test\",\"fieldFlags\":[2,5]}"
-          }
-        ],
-        "nodeId" : "ibks64",
-        "nodeType" : 1
-      },
-      {
-        "nodeProperties" : [
-          {
-            "key" : "node.label",
-            "value" : "\"\""
-          },
-          {
-            "key" : "node.canvas.origin",
-            "value" : "[36.5,463]"
-          },
-          {
-            "key" : "node.enabled",
-            "value" : "true"
-          },
-          {
-            "key" : "outnode.property",
-            "value" : "{\"options\":{\"holder\":{\"outnode.options.lineNumberEnabled\":\"MQ==\",\"outnode.options.highlightEnabled\":\"MQ==\",\"outnode.options.renderMarkdown\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
-          }
-        ],
-        "nodeId" : "f83iou",
-        "nodeType" : 5
-      },
-      {
-        "nodeProperties" : [
-          {
-            "key" : "node.label",
-            "value" : "\"\""
-          },
-          {
-            "key" : "node.canvas.origin",
-            "value" : "[32,116]"
+            "value" : "[35.5,152.5]"
           },
           {
             "key" : "node.enabled",
@@ -172,7 +106,7 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             "value" : "{\"optionHolder\":{\"holder\":{\"runner.options.maxRedirects\":\"MTA=\",\"runner.options.clientCertificatePassphrase\":\"\",\"runner.options.storeCookies\":\"MQ==\",\"runner.options.followRedirects\":\"MQ==\",\"runner.options.redirectAuth\":\"MA==\",\"runner.options.sendCookies\":\"MQ==\",\"runner.options.redirectOriginalMethod\":\"MA==\",\"runner.options.sslEnabled\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
           }
         ],
-        "nodeId" : "hqt8le",
+        "nodeId" : "r5i7uv",
         "nodeType" : 15
       },
       {
@@ -183,7 +117,29 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[90,171]"
+            "value" : "[35.5,76.5]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "requestnode.property",
+            "value" : "{\"options\":{\"holder\":{\"request.options.inferContentType\":\"MQ==\",\"request.options.sendDefaultHeaders\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/register\",\"fieldFlags\":[2,5]}"
+          }
+        ],
+        "nodeId" : "szyrfq",
+        "nodeType" : 1
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[35.5,228.5]"
           },
           {
             "key" : "node.enabled",
@@ -194,52 +150,8 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             "value" : "{\"options\":{\"holder\":{\"outnode.options.lineNumberEnabled\":\"MQ==\",\"outnode.options.highlightEnabled\":\"MQ==\",\"outnode.options.renderMarkdown\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
           }
         ],
-        "nodeId" : "3atf1h",
+        "nodeId" : "f99jd6",
         "nodeType" : 5
-      },
-      {
-        "nodeProperties" : [
-          {
-            "key" : "node.label",
-            "value" : "\"\""
-          },
-          {
-            "key" : "node.canvas.origin",
-            "value" : "[36.5,387]"
-          },
-          {
-            "key" : "node.enabled",
-            "value" : "true"
-          },
-          {
-            "key" : "runnernode.property",
-            "value" : "{\"optionHolder\":{\"holder\":{\"runner.options.maxRedirects\":\"MTA=\",\"runner.options.clientCertificatePassphrase\":\"\",\"runner.options.storeCookies\":\"MQ==\",\"runner.options.followRedirects\":\"MQ==\",\"runner.options.redirectAuth\":\"MA==\",\"runner.options.sendCookies\":\"MQ==\",\"runner.options.redirectOriginalMethod\":\"MA==\",\"runner.options.sslEnabled\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
-          }
-        ],
-        "nodeId" : "d5vxoa",
-        "nodeType" : 15
-      },
-      {
-        "nodeProperties" : [
-          {
-            "key" : "node.label",
-            "value" : "\"\""
-          },
-          {
-            "key" : "node.canvas.origin",
-            "value" : "[107.5,229]"
-          },
-          {
-            "key" : "node.enabled",
-            "value" : "true"
-          },
-          {
-            "key" : "authNode.property",
-            "value" : "{\"selectedScheme\":2,\"optionHolder\":{\"holder\":{\"auth.options.difest.algo\":\"MA==\",\"auth.options.bearer.token\":\"e3tocXQ4bGUucGF5bG9hZH19\",\"auth.options.basic.encoding\":\"NA==\"},\"flags\":{\"auth.options.bearer.token\":[2]},\"storeEncrypted\":true}}"
-          }
-        ],
-        "nodeId" : "tqhh22",
-        "nodeType" : 2
       },
       {
         "nodeProperties" : [
@@ -249,7 +161,7 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[33,0]"
+            "value" : "[35.5,0.5]"
           },
           {
             "key" : "node.enabled",
@@ -257,102 +169,52 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "documentnode.document",
-            "value" : "{\"options\":{\"holder\":{\"documentnode.options.cursorposition\":\"MA==\"},\"flags\":{},\"storeEncrypted\":true},\"document\":{\"lineEnding\":0,\"language\":2,\"createdBy\":\"JSON Payload\",\"flags\":[2,4,5],\"body\":\"\",\"encoding\":4,\"lastEditPosition\":0}}"
+            "value" : "{\"options\":{\"holder\":{\"documentnode.options.cursorposition\":\"NjA=\"},\"flags\":{},\"storeEncrypted\":true},\"document\":{\"lineEnding\":0,\"language\":2,\"createdBy\":\"JSON Payload\",\"flags\":[2,4,5],\"body\":\"{\\n    \\\"email\\\": \\\"test123@test.com\\\",\\n    \\\"password\\\": \\\"testtest\\\"\\n}\",\"encoding\":4,\"lastEditPosition\":60}}"
           }
         ],
-        "nodeId" : "aba1ix",
+        "nodeId" : "nowb8k",
         "nodeType" : 6
       }
     ],
     "linkEntries" : [
       {
         "portFrom" : {
-          "nodeId" : "ibks64",
-          "portId" : "ibks64_25_1"
+          "nodeId" : "szyrfq",
+          "portId" : "szyrfq_25_1"
         },
         "portTo" : {
-          "nodeId" : "d5vxoa",
-          "portId" : "d5vxoa_25_0"
+          "nodeId" : "r5i7uv",
+          "portId" : "r5i7uv_25_0"
         }
       },
       {
         "portFrom" : {
-          "nodeId" : "d5vxoa",
-          "portId" : "d5vxoa_8_1"
+          "nodeId" : "r5i7uv",
+          "portId" : "r5i7uv_8_1"
         },
         "portTo" : {
-          "nodeId" : "f83iou",
-          "portId" : "f83iou_14_0"
+          "nodeId" : "f99jd6",
+          "portId" : "f99jd6_14_0"
         }
       },
       {
         "portFrom" : {
-          "nodeId" : "d5vxoa",
-          "portId" : "d5vxoa_12_1"
+          "nodeId" : "r5i7uv",
+          "portId" : "r5i7uv_12_1"
         },
         "portTo" : {
-          "nodeId" : "f83iou",
-          "portId" : "f83iou_14_0"
+          "nodeId" : "f99jd6",
+          "portId" : "f99jd6_14_0"
         }
       },
       {
         "portFrom" : {
-          "nodeId" : "8l321r",
-          "portId" : "8l321r_25_1"
+          "nodeId" : "nowb8k",
+          "portId" : "nowb8k_10_1"
         },
         "portTo" : {
-          "nodeId" : "hqt8le",
-          "portId" : "hqt8le_25_0"
-        }
-      },
-      {
-        "portFrom" : {
-          "nodeId" : "hqt8le",
-          "portId" : "hqt8le_8_1"
-        },
-        "portTo" : {
-          "nodeId" : "3atf1h",
-          "portId" : "3atf1h_14_0"
-        }
-      },
-      {
-        "portFrom" : {
-          "nodeId" : "hqt8le",
-          "portId" : "hqt8le_12_1"
-        },
-        "portTo" : {
-          "nodeId" : "3atf1h",
-          "portId" : "3atf1h_14_0"
-        }
-      },
-      {
-        "portFrom" : {
-          "nodeId" : "aba1ix",
-          "portId" : "aba1ix_10_1"
-        },
-        "portTo" : {
-          "nodeId" : "8l321r",
-          "portId" : "8l321r_11_0"
-        }
-      },
-      {
-        "portFrom" : {
-          "nodeId" : "hqt8le",
-          "portId" : "hqt8le_12_1"
-        },
-        "portTo" : {
-          "nodeId" : "tqhh22",
-          "portId" : "tqhh22_17_0"
-        }
-      },
-      {
-        "portFrom" : {
-          "nodeId" : "tqhh22",
-          "portId" : "tqhh22_7_1"
-        },
-        "portTo" : {
-          "nodeId" : "ibks64",
-          "portId" : "ibks64_7_0"
+          "nodeId" : "szyrfq",
+          "portId" : "szyrfq_11_0"
         }
       }
     ]
