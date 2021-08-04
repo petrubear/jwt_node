@@ -95,7 +95,29 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[35.5,152.5]"
+            "value" : "[269,453.5]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "requestnode.property",
+            "value" : "{\"options\":{\"holder\":{\"request.options.sendDefaultHeaders\":\"MQ==\",\"request.options.inferContentType\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/token\",\"fieldFlags\":[2,5]}"
+          }
+        ],
+        "nodeId" : "yx0mbr",
+        "nodeType" : 1
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[37.5,226.5]"
           },
           {
             "key" : "node.enabled",
@@ -117,7 +139,51 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[35.5,76.5]"
+            "value" : "[269,529.5]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "runnernode.property",
+            "value" : "{\"optionHolder\":{\"holder\":{\"runner.options.maxRedirects\":\"MTA=\",\"runner.options.clientCertificatePassphrase\":\"\",\"runner.options.storeCookies\":\"MQ==\",\"runner.options.followRedirects\":\"MQ==\",\"runner.options.redirectAuth\":\"MA==\",\"runner.options.sendCookies\":\"MQ==\",\"runner.options.redirectOriginalMethod\":\"MA==\",\"runner.options.sslEnabled\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "v726xl",
+        "nodeType" : 15
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[269,605.5]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "outnode.property",
+            "value" : "{\"options\":{\"holder\":{\"outnode.options.lineNumberEnabled\":\"MQ==\",\"outnode.options.highlightEnabled\":\"MQ==\",\"outnode.options.renderMarkdown\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "rcs51k",
+        "nodeType" : 5
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[37.5,150.5]"
           },
           {
             "key" : "node.enabled",
@@ -125,7 +191,7 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "requestnode.property",
-            "value" : "{\"options\":{\"holder\":{\"request.options.inferContentType\":\"MQ==\",\"request.options.sendDefaultHeaders\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/register\",\"fieldFlags\":[2,5]}"
+            "value" : "{\"options\":{\"holder\":{\"request.options.sendDefaultHeaders\":\"MQ==\",\"request.options.inferContentType\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/register\",\"fieldFlags\":[2,5]}"
           }
         ],
         "nodeId" : "szyrfq",
@@ -139,7 +205,95 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[35.5,228.5]"
+            "value" : "[302.5,2]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "scriptnode.property",
+            "value" : "{\"options\":{\"holder\":{\"scriptNode.options.output\":\"MA==\"},\"flags\":{},\"storeEncrypted\":true},\"script\":{\"lineEnding\":0,\"language\":1,\"createdBy\":null,\"flags\":[2,4,5],\"body\":\"function randomMail() {\\n  return 'xxxxxxxx-xxxx'.replace(\\\/[xy]\\\/g, function(c) {\\n    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);\\n    return v.toString(16);\\n  });\\n}\\n\\nconsole.log(`${randomMail()}@test.com`);\",\"encoding\":4,\"lastEditPosition\":228}}"
+          }
+        ],
+        "nodeId" : "quedwv",
+        "nodeType" : 13
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"JSON Payload\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[268,380.5]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "documentnode.document",
+            "value" : "{\"options\":{\"holder\":{\"documentnode.options.cursorposition\":\"NDM=\"},\"flags\":{},\"storeEncrypted\":true},\"document\":{\"lineEnding\":0,\"language\":2,\"createdBy\":\"JSON Payload\",\"flags\":[2,4,5],\"body\":\"{\\n    \\\"refreshToken\\\": \\\"{{ux5vdt.output}}\\\"\\n}\",\"encoding\":4,\"lastEditPosition\":43}}"
+          }
+        ],
+        "nodeId" : "8s7wch",
+        "nodeType" : 6
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[433,353.5]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "false"
+          },
+          {
+            "key" : "outnode.property",
+            "value" : "{\"options\":{\"holder\":{\"outnode.options.lineNumberEnabled\":\"MQ==\",\"outnode.options.highlightEnabled\":\"MQ==\",\"outnode.options.renderMarkdown\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "rz03y4",
+        "nodeType" : 5
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[276.5,307]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "scriptnode.property",
+            "value" : "{\"options\":{\"holder\":{\"scriptNode.options.output\":\"MA==\"},\"flags\":{},\"storeEncrypted\":true},\"script\":{\"lineEnding\":0,\"language\":1,\"createdBy\":null,\"flags\":[2,4,5],\"body\":\"const response = JSON.parse(JSON.stringify({{r5i7uv.payload}}))\\n\\nconsole.log(response.success.refreshToken)\",\"encoding\":4,\"lastEditPosition\":107}}"
+          }
+        ],
+        "nodeId" : "ux5vdt",
+        "nodeType" : 13
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[37.5,302.5]"
           },
           {
             "key" : "node.enabled",
@@ -161,7 +315,7 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[35.5,0.5]"
+            "value" : "[37.5,74.5]"
           },
           {
             "key" : "node.enabled",
@@ -169,7 +323,7 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "documentnode.document",
-            "value" : "{\"options\":{\"holder\":{\"documentnode.options.cursorposition\":\"NjA=\"},\"flags\":{},\"storeEncrypted\":true},\"document\":{\"lineEnding\":0,\"language\":2,\"createdBy\":\"JSON Payload\",\"flags\":[2,4,5],\"body\":\"{\\n    \\\"email\\\": \\\"test123@test.com\\\",\\n    \\\"password\\\": \\\"testtest\\\"\\n}\",\"encoding\":4,\"lastEditPosition\":60}}"
+            "value" : "{\"options\":{\"holder\":{\"documentnode.options.cursorposition\":\"NjQ=\"},\"flags\":{},\"storeEncrypted\":true},\"document\":{\"lineEnding\":0,\"language\":2,\"createdBy\":\"JSON Payload\",\"flags\":[2,4,5],\"body\":\"{\\n    \\\"email\\\": \\\"{{quedwv.output}}\\\",\\n    \\\"password\\\": \\\"testtest\\\"\\n}\",\"encoding\":4,\"lastEditPosition\":64}}"
           }
         ],
         "nodeId" : "nowb8k",
@@ -215,6 +369,86 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         "portTo" : {
           "nodeId" : "szyrfq",
           "portId" : "szyrfq_11_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "quedwv",
+          "portId" : "quedwv_35_1"
+        },
+        "portTo" : {
+          "nodeId" : "nowb8k",
+          "portId" : "nowb8k_17_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "yx0mbr",
+          "portId" : "yx0mbr_25_1"
+        },
+        "portTo" : {
+          "nodeId" : "v726xl",
+          "portId" : "v726xl_25_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "v726xl",
+          "portId" : "v726xl_8_1"
+        },
+        "portTo" : {
+          "nodeId" : "rcs51k",
+          "portId" : "rcs51k_14_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "v726xl",
+          "portId" : "v726xl_12_1"
+        },
+        "portTo" : {
+          "nodeId" : "rcs51k",
+          "portId" : "rcs51k_14_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "8s7wch",
+          "portId" : "8s7wch_10_1"
+        },
+        "portTo" : {
+          "nodeId" : "yx0mbr",
+          "portId" : "yx0mbr_11_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "r5i7uv",
+          "portId" : "r5i7uv_12_1"
+        },
+        "portTo" : {
+          "nodeId" : "ux5vdt",
+          "portId" : "ux5vdt_17_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "ux5vdt",
+          "portId" : "ux5vdt_35_1"
+        },
+        "portTo" : {
+          "nodeId" : "rz03y4",
+          "portId" : "rz03y4_14_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "ux5vdt",
+          "portId" : "ux5vdt_35_1"
+        },
+        "portTo" : {
+          "nodeId" : "8s7wch",
+          "portId" : "8s7wch_17_0"
         }
       }
     ]

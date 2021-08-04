@@ -9,7 +9,8 @@ const router = express.Router();
 // router.get('/test', [rateLimiter(1, 0), verifyToken],
 //     authController.test);
 
-// router.post('/token', authController.token);
+// [POST] token
+router.post('/token', authController.token);
 
 // [POST] register
 router.post('/register', rateLimiter(1, 0),
