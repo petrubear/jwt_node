@@ -19,7 +19,7 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     "configurations" : [
       {
         "id" : "7gm4np",
-        "name" : "Default",
+        "name" : "Dev",
         "selected" : true,
         "variables" : {
           "type" : 0,
@@ -50,6 +50,40 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             }
           ]
         }
+      },
+      {
+        "id" : "irht6n",
+        "name" : "Prod",
+        "selected" : false,
+        "variables" : {
+          "type" : 0,
+          "elements" : [
+            {
+              "id" : "6EF97F4D-322C-4E87-B01D-F3D89F1AA0A3",
+              "keyAlias" : null,
+              "descr" : "",
+              "value" : "http:\/\/localhost:3001",
+              "flags" : [
+                3,
+                2
+              ],
+              "key" : "api_srv",
+              "storeEncrypted" : false
+            },
+            {
+              "id" : "E4E3A38A-F021-46EB-8E6B-C7875B9CD304",
+              "keyAlias" : null,
+              "descr" : "",
+              "value" : "",
+              "flags" : [
+                3,
+                2
+              ],
+              "key" : "",
+              "storeEncrypted" : false
+            }
+          ]
+        }
       }
     ],
     "nodeEntries" : [
@@ -61,7 +95,29 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[33.5,10]"
+            "value" : "[31,59]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "requestnode.property",
+            "value" : "{\"options\":{\"holder\":{\"request.options.inferContentType\":\"MQ==\",\"request.options.sendDefaultHeaders\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/token\",\"fieldFlags\":[2,5]}"
+          }
+        ],
+        "nodeId" : "8l321r",
+        "nodeType" : 1
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[36.5,306]"
           },
           {
             "key" : "node.enabled",
@@ -83,7 +139,7 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[33.5,162]"
+            "value" : "[36.5,463]"
           },
           {
             "key" : "node.enabled",
@@ -105,7 +161,51 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[33.5,86]"
+            "value" : "[32,116]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "runnernode.property",
+            "value" : "{\"optionHolder\":{\"holder\":{\"runner.options.maxRedirects\":\"MTA=\",\"runner.options.clientCertificatePassphrase\":\"\",\"runner.options.storeCookies\":\"MQ==\",\"runner.options.followRedirects\":\"MQ==\",\"runner.options.redirectAuth\":\"MA==\",\"runner.options.sendCookies\":\"MQ==\",\"runner.options.redirectOriginalMethod\":\"MA==\",\"runner.options.sslEnabled\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "hqt8le",
+        "nodeType" : 15
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[90,171]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "outnode.property",
+            "value" : "{\"options\":{\"holder\":{\"outnode.options.lineNumberEnabled\":\"MQ==\",\"outnode.options.highlightEnabled\":\"MQ==\",\"outnode.options.renderMarkdown\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "3atf1h",
+        "nodeType" : 5
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[36.5,387]"
           },
           {
             "key" : "node.enabled",
@@ -118,6 +218,50 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         ],
         "nodeId" : "d5vxoa",
         "nodeType" : 15
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[107.5,229]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "authNode.property",
+            "value" : "{\"selectedScheme\":2,\"optionHolder\":{\"holder\":{\"auth.options.difest.algo\":\"MA==\",\"auth.options.bearer.token\":\"e3tocXQ4bGUucGF5bG9hZH19\",\"auth.options.basic.encoding\":\"NA==\"},\"flags\":{\"auth.options.bearer.token\":[2]},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "tqhh22",
+        "nodeType" : 2
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"JSON Payload\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[33,0]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "documentnode.document",
+            "value" : "{\"options\":{\"holder\":{\"documentnode.options.cursorposition\":\"MA==\"},\"flags\":{},\"storeEncrypted\":true},\"document\":{\"lineEnding\":0,\"language\":2,\"createdBy\":\"JSON Payload\",\"flags\":[2,4,5],\"body\":\"\",\"encoding\":4,\"lastEditPosition\":0}}"
+          }
+        ],
+        "nodeId" : "aba1ix",
+        "nodeType" : 6
       }
     ],
     "linkEntries" : [
@@ -149,6 +293,66 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         "portTo" : {
           "nodeId" : "f83iou",
           "portId" : "f83iou_14_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "8l321r",
+          "portId" : "8l321r_25_1"
+        },
+        "portTo" : {
+          "nodeId" : "hqt8le",
+          "portId" : "hqt8le_25_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "hqt8le",
+          "portId" : "hqt8le_8_1"
+        },
+        "portTo" : {
+          "nodeId" : "3atf1h",
+          "portId" : "3atf1h_14_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "hqt8le",
+          "portId" : "hqt8le_12_1"
+        },
+        "portTo" : {
+          "nodeId" : "3atf1h",
+          "portId" : "3atf1h_14_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "aba1ix",
+          "portId" : "aba1ix_10_1"
+        },
+        "portTo" : {
+          "nodeId" : "8l321r",
+          "portId" : "8l321r_11_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "hqt8le",
+          "portId" : "hqt8le_12_1"
+        },
+        "portTo" : {
+          "nodeId" : "tqhh22",
+          "portId" : "tqhh22_17_0"
+        }
+      },
+      {
+        "portFrom" : {
+          "nodeId" : "tqhh22",
+          "portId" : "tqhh22_7_1"
+        },
+        "portTo" : {
+          "nodeId" : "ibks64",
+          "portId" : "ibks64_7_0"
         }
       }
     ]
