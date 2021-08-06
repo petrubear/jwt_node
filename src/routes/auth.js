@@ -9,6 +9,7 @@ const router = express.Router();
 // router.get('/test', [rateLimiter(1, 0), verifyToken],
 //     authController.test);
 
+router.post('/login', authController.login);
 // [POST] token
 router.post('/token', authController.token);
 
@@ -17,5 +18,6 @@ router.post('/register', rateLimiter(1, 0),
     authController.register);
 
 router.post('/confirmEmailToken', verifyToken, authController.confirmEmailToken);
+
 
 module.exports = router;

@@ -5,6 +5,59 @@ const bcrypt = require('bcrypt');
 const {v4: uuidv4} = require('uuid');
 const nodemailer = require('nodemailer');
 
+const login = async (req, res) => {
+    try {
+        const {error} = validation.loginSchema.validate(req.body);
+        if (error) {
+            res.status(400).json({
+                error: {
+                    state: 400,
+                    message: 'INPUT_ERRORS',
+                    errors: error.details,
+                    original: error._original,
+                },
+            });
+        } else {
+            const user = await User.findOne({email:req.body.email});
+            if (user) {
+                const validatePassword = await bcrypt.compare(req.body.password, user.password);
+                if (validatePassword) {
+                    // generate access token & refresh token
+                    const accessToken = jwt.sign({
+                        _id: user.id,
+                        email: user.email,
+                    }, process.env.SECRET_ACCESS_TOKEN, {
+                        expiresIn: process.env.ACCESS_TOKEN_EXPIRY,
+                    });
+
+                    const refreshToken = jwt.sign({
+                        _id: user.id,
+                        email: user.email,
+                    }, process.env.SECRET_REFRESH_TOKEN, {
+                        expiresIn: process.env.REFRESH_TOKEN_EXPIRY,
+                    });
+
+                    if (await addRefreshToken(user, refreshToken)) {
+                        res.status(200).json({
+                            success: {
+                                status: 200,
+                                message: 'LOGIN_SUCCES',
+                                accessToken: accessToken,
+                                refreshToken: refreshToken,
+                            },
+                        });
+                    } else {
+                        res.status(500).json({error: {status: 500, message: 'SERVER_ERROR'}});
+                    }
+                }
+            }
+        }
+    } catch (err) {
+        console.log(err);
+        res.status(400).json({error: {status: 400, message: 'BAD_REQUEST'}});
+    }
+};
+
 const register = async (req, res) => {
     try {
         const {error} = validation.registerSchema.validate(req.body, {abortEarly: false});
@@ -159,6 +212,34 @@ const sendEmailConfirmation = async (user) => {
     });
 };
 
+
+const addRefreshToken = async (user, refreshToken) => {
+    try {
+        const existingRefreshTokens = user.security.tokens;
+
+        if (existingRefreshTokens.length >= 5) {
+            await User.updateOne({email: user.email}, {
+                $pull: {
+                    'security.tokens': {
+                        _id: existingRefreshTokens[0]._id,
+                    },
+                },
+            });
+        }
+        await User.updateOne({email: user.email}, {
+            $push: {
+                'security.tokens': {
+                    refreshToken: refreshToken,
+                    createdAt: new Date(),
+                },
+            },
+        });
+        return true;
+    } catch (err) {
+        return false;
+    }
+};
+
 const confirmEmailToken = async (req, res) => {
     try {
         const emailToken = req.body.emailToken;
@@ -207,4 +288,4 @@ const confirmEmailToken = async (req, res) => {
     }
 };
 
-module.exports = {register, token, confirmEmailToken};
+module.exports = {register, token, confirmEmailToken, login};
