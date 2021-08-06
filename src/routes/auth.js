@@ -1,7 +1,7 @@
 const express = require('express');
 const authController = require('../controllers/auth');
 const rateLimiter = require('../helpers/rateLimiter');
-// const verifyToken = require('../helpers/verifyToken');
+const verifyToken = require('../helpers/verifyToken');
 
 // eslint-disable-next-line new-cap
 const router = express.Router();
@@ -16,5 +16,6 @@ router.post('/token', authController.token);
 router.post('/register', rateLimiter(1, 0),
     authController.register);
 
+router.post('/confirmEmailToken', verifyToken, authController.confirmEmailToken);
 
 module.exports = router;

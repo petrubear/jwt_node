@@ -3,6 +3,7 @@ const User = require('../model/user');
 const validation = require('../helpers/validation');
 const bcrypt = require('bcrypt');
 const {v4: uuidv4} = require('uuid');
+const nodemailer = require('nodemailer');
 
 const register = async (req, res) => {
     try {
@@ -61,6 +62,9 @@ const register = async (req, res) => {
                     },
                 },
             });
+
+            // send email confirmation
+            await sendEmailConfirmation({email: user.email, emailToken: user.emailToken});
 
             res.status(200).header().json({
                 success: {
@@ -137,4 +141,70 @@ const token = async (req, res) => {
     }
 };
 
-module.exports = {register, token};
+const sendEmailConfirmation = async (user) => {
+    const transport = nodemailer.createTransport({
+        host: process.env.MAIL_HOST,
+        port: process.env.MAIL_PORT,
+        auth: {
+            user: process.env.MAIL_USER,
+            pass: process.env.MAIL_PASSWORD,
+        },
+    });
+
+    await transport.sendMail({
+        from: '"Course test" <noreply@coursetest.com>',
+        to: user.email,
+        subject: 'Confirm Your Email',
+        text: `Click the link to confirm your email: http://localhost:9000/confirm-email/${user.emailToken}`,
+    });
+};
+
+const confirmEmailToken = async (req, res) => {
+    try {
+        const emailToken = req.body.emailToken;
+        if (emailToken) {
+            const accessToken = req.header('Authorization').split(' ')[1];
+            const decodedAccessToken = jwt.verify(accessToken, process.env.SECRET_ACCESS_TOKEN);
+            // check user
+            const user = await User.findOne({email: decodedAccessToken.email});
+
+            if (user && !user.emailConfirmed) {
+                if (emailToken === user.emailToken) {
+                    await User.updateOne({email: decodedAccessToken.email},
+                        {
+                            $set: {
+                                emailConfirmed: true,
+                                emailToken: null,
+                            },
+                        });
+                    res.status(200).json({
+                        success: {
+                            status: 200,
+                            message: 'EMAIL_CONFIRMED',
+                        },
+                    });
+                } else {
+                    res.status(401).json({
+                        success: {
+                            status: 401,
+                            message: 'INVALID_EMAIL_TOKEN',
+                        },
+                    });
+                }
+            } else {
+                res.status(401).json({
+                    success: {
+                        status: 401,
+                        message: 'EMAIL_ALREADY_CONFIRMED',
+                    },
+                });
+            }
+        } else {
+            res.status(400).json({error: {status: 400, message: 'BAD_REQUEST'}});
+        }
+    } catch (err) {
+        res.status(400).json({error: {status: 400, message: 'BAD_REQUEST'}});
+    }
+};
+
+module.exports = {register, token, confirmEmailToken};

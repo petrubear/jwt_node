@@ -1,5 +1,5 @@
-CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%{
-  "encodedBy" : 6,
+CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|7|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%{
+  "encodedBy" : 7,
   "projectID" : "CB45FA69-ACE9-4855-B165-CC72EEBAC0C1",
   "data" : {
     "documentVersionCode" : 2,
@@ -20,12 +20,12 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       {
         "id" : "7gm4np",
         "name" : "Dev",
-        "selected" : true,
+        "selected" : false,
         "variables" : {
           "type" : 0,
           "elements" : [
             {
-              "id" : "9E843408-3241-4A1B-96AD-764E37840DB4",
+              "id" : "E68BCE45-0098-4DD7-B5D3-8EB6ADD9767B",
               "keyAlias" : null,
               "descr" : "",
               "value" : "http:\/\/localhost:3000",
@@ -35,18 +35,6 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
               ],
               "key" : "api_srv",
               "storeEncrypted" : false
-            },
-            {
-              "id" : "DF80BE6D-76C6-4217-82B2-EFF45505AB04",
-              "keyAlias" : null,
-              "descr" : "",
-              "value" : "",
-              "flags" : [
-                3,
-                2
-              ],
-              "key" : "",
-              "storeEncrypted" : false
             }
           ]
         }
@@ -54,12 +42,12 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       {
         "id" : "irht6n",
         "name" : "Prod",
-        "selected" : false,
+        "selected" : true,
         "variables" : {
           "type" : 0,
           "elements" : [
             {
-              "id" : "6EF97F4D-322C-4E87-B01D-F3D89F1AA0A3",
+              "id" : "B6FFBBF2-E4CD-40B1-9618-936030F405E6",
               "keyAlias" : null,
               "descr" : "",
               "value" : "http:\/\/localhost:3001",
@@ -68,18 +56,6 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 2
               ],
               "key" : "api_srv",
-              "storeEncrypted" : false
-            },
-            {
-              "id" : "E4E3A38A-F021-46EB-8E6B-C7875B9CD304",
-              "keyAlias" : null,
-              "descr" : "",
-              "value" : "",
-              "flags" : [
-                3,
-                2
-              ],
-              "key" : "",
               "storeEncrypted" : false
             }
           ]
@@ -103,77 +79,11 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "requestnode.property",
-            "value" : "{\"options\":{\"holder\":{\"request.options.sendDefaultHeaders\":\"MQ==\",\"request.options.inferContentType\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/token\",\"fieldFlags\":[2,5]}"
+            "value" : "{\"options\":{\"holder\":{\"request.options.inferContentType\":\"MQ==\",\"request.options.sendDefaultHeaders\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/token\",\"fieldFlags\":[2,5]}"
           }
         ],
         "nodeId" : "yx0mbr",
         "nodeType" : 1
-      },
-      {
-        "nodeProperties" : [
-          {
-            "key" : "node.label",
-            "value" : "\"\""
-          },
-          {
-            "key" : "node.canvas.origin",
-            "value" : "[37.5,226.5]"
-          },
-          {
-            "key" : "node.enabled",
-            "value" : "true"
-          },
-          {
-            "key" : "runnernode.property",
-            "value" : "{\"optionHolder\":{\"holder\":{\"runner.options.maxRedirects\":\"MTA=\",\"runner.options.clientCertificatePassphrase\":\"\",\"runner.options.storeCookies\":\"MQ==\",\"runner.options.followRedirects\":\"MQ==\",\"runner.options.redirectAuth\":\"MA==\",\"runner.options.sendCookies\":\"MQ==\",\"runner.options.redirectOriginalMethod\":\"MA==\",\"runner.options.sslEnabled\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
-          }
-        ],
-        "nodeId" : "r5i7uv",
-        "nodeType" : 15
-      },
-      {
-        "nodeProperties" : [
-          {
-            "key" : "node.label",
-            "value" : "\"\""
-          },
-          {
-            "key" : "node.canvas.origin",
-            "value" : "[269,529.5]"
-          },
-          {
-            "key" : "node.enabled",
-            "value" : "true"
-          },
-          {
-            "key" : "runnernode.property",
-            "value" : "{\"optionHolder\":{\"holder\":{\"runner.options.maxRedirects\":\"MTA=\",\"runner.options.clientCertificatePassphrase\":\"\",\"runner.options.storeCookies\":\"MQ==\",\"runner.options.followRedirects\":\"MQ==\",\"runner.options.redirectAuth\":\"MA==\",\"runner.options.sendCookies\":\"MQ==\",\"runner.options.redirectOriginalMethod\":\"MA==\",\"runner.options.sslEnabled\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
-          }
-        ],
-        "nodeId" : "v726xl",
-        "nodeType" : 15
-      },
-      {
-        "nodeProperties" : [
-          {
-            "key" : "node.label",
-            "value" : "\"\""
-          },
-          {
-            "key" : "node.canvas.origin",
-            "value" : "[269,605.5]"
-          },
-          {
-            "key" : "node.enabled",
-            "value" : "true"
-          },
-          {
-            "key" : "outnode.property",
-            "value" : "{\"options\":{\"holder\":{\"outnode.options.lineNumberEnabled\":\"MQ==\",\"outnode.options.highlightEnabled\":\"MQ==\",\"outnode.options.renderMarkdown\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
-          }
-        ],
-        "nodeId" : "rcs51k",
-        "nodeType" : 5
       },
       {
         "nodeProperties" : [
@@ -191,7 +101,7 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "requestnode.property",
-            "value" : "{\"options\":{\"holder\":{\"request.options.sendDefaultHeaders\":\"MQ==\",\"request.options.inferContentType\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/register\",\"fieldFlags\":[2,5]}"
+            "value" : "{\"options\":{\"holder\":{\"request.options.inferContentType\":\"MQ==\",\"request.options.sendDefaultHeaders\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true},\"method\":1,\"url\":\"{{env.api_srv}}\\\/api\\\/auth\\\/register\",\"fieldFlags\":[2,5]}"
           }
         ],
         "nodeId" : "szyrfq",
@@ -271,19 +181,41 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           },
           {
             "key" : "node.canvas.origin",
-            "value" : "[276.5,307]"
+            "value" : "[269,529.5]"
           },
           {
             "key" : "node.enabled",
             "value" : "true"
           },
           {
-            "key" : "scriptnode.property",
-            "value" : "{\"options\":{\"holder\":{\"scriptNode.options.output\":\"MA==\"},\"flags\":{},\"storeEncrypted\":true},\"script\":{\"lineEnding\":0,\"language\":1,\"createdBy\":null,\"flags\":[2,4,5],\"body\":\"const response = JSON.parse(JSON.stringify({{r5i7uv.payload}}))\\n\\nconsole.log(response.success.refreshToken)\",\"encoding\":4,\"lastEditPosition\":107}}"
+            "key" : "runnernode.property",
+            "value" : "{\"optionHolder\":{\"holder\":{\"runner.options.maxRedirects\":\"MTA=\",\"runner.options.clientCertificatePassphrase\":\"\",\"runner.options.storeCookies\":\"MQ==\",\"runner.options.followRedirects\":\"MQ==\",\"runner.options.redirectAuth\":\"MA==\",\"runner.options.sendCookies\":\"MQ==\",\"runner.options.redirectOriginalMethod\":\"MA==\",\"runner.options.sslEnabled\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
           }
         ],
-        "nodeId" : "ux5vdt",
-        "nodeType" : 13
+        "nodeId" : "v726xl",
+        "nodeType" : 15
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[269,605.5]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "outnode.property",
+            "value" : "{\"options\":{\"holder\":{\"outnode.options.lineNumberEnabled\":\"MQ==\",\"outnode.options.highlightEnabled\":\"MQ==\",\"outnode.options.renderMarkdown\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "rcs51k",
+        "nodeType" : 5
       },
       {
         "nodeProperties" : [
@@ -328,6 +260,50 @@ CB45FA69-ACE9-4855-B165-CC72EEBAC0C1|6|false|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         ],
         "nodeId" : "nowb8k",
         "nodeType" : 6
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[276.5,307]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "scriptnode.property",
+            "value" : "{\"options\":{\"holder\":{\"scriptNode.options.output\":\"MA==\"},\"flags\":{},\"storeEncrypted\":true},\"script\":{\"lineEnding\":0,\"language\":1,\"createdBy\":null,\"flags\":[2,4,5],\"body\":\"const response = JSON.parse(JSON.stringify({{r5i7uv.payload}}))\\n\\nconsole.log(response.success.refreshToken)\",\"encoding\":4,\"lastEditPosition\":107}}"
+          }
+        ],
+        "nodeId" : "ux5vdt",
+        "nodeType" : 13
+      },
+      {
+        "nodeProperties" : [
+          {
+            "key" : "node.label",
+            "value" : "\"\""
+          },
+          {
+            "key" : "node.canvas.origin",
+            "value" : "[37.5,226.5]"
+          },
+          {
+            "key" : "node.enabled",
+            "value" : "true"
+          },
+          {
+            "key" : "runnernode.property",
+            "value" : "{\"optionHolder\":{\"holder\":{\"runner.options.maxRedirects\":\"MTA=\",\"runner.options.clientCertificatePassphrase\":\"\",\"runner.options.storeCookies\":\"MQ==\",\"runner.options.followRedirects\":\"MQ==\",\"runner.options.redirectAuth\":\"MA==\",\"runner.options.sendCookies\":\"MQ==\",\"runner.options.redirectOriginalMethod\":\"MA==\",\"runner.options.sslEnabled\":\"MQ==\"},\"flags\":{},\"storeEncrypted\":true}}"
+          }
+        ],
+        "nodeId" : "r5i7uv",
+        "nodeType" : 15
       }
     ],
     "linkEntries" : [

@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     emailConfirmed: {
         type: Boolean,
         required: true,
-        default: true,
+        default: false,
     },
     emailToken: {
         type: String,
