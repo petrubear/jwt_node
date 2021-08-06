@@ -1,5 +1,6 @@
 .idea
 .iml
+.env-cmdrc
 node_modules
 /images/
 /avatars/
