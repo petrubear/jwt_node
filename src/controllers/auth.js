@@ -325,6 +325,7 @@ const resetPasswordConfirm = async (req, res) => {
         res.status(400).json({error: {status: 400, message: 'BAD_REQUEST'}});
     }
 };
+
 const resetPassword = async (req, res) => {
     try {
         if (req.body.provisionalPassword.length >= 6 && req.body.provisionalPassword.length <= 255) {
@@ -337,7 +338,7 @@ const resetPassword = async (req, res) => {
             const expiresIn = moment().add(10, 'm').toISOString();
 
             // Update user with password token
-            await User.findOneAndUpdate({email: req.body.email}, {
+            const user = await User.findOneAndUpdate({email: req.body.email}, {
                 $set: {
                     'security.passwordReset': {
                         token: passwordResetToken,
@@ -445,11 +446,11 @@ const changeEmailConfirm = async (req, res) => {
 
 const sendPasswordResetConfirmation = async (user) => {
     const transport = nodemailer.createTransport({
-        host: process.env.NODEMAILER_HOST,
-        port: process.env.NODEMAILER_PORT,
+        host: process.env.MAIL_HOST,
+        port: process.env.MAIL_PORT,
         auth: {
-            user: process.env.NODEMAILER_USER,
-            pass: process.env.NODEMAILER_PASS,
+            user: process.env.MAIL_USER,
+            pass: process.env.MAIL_PASSWORD,
         },
     });
 

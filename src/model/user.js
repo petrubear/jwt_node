@@ -32,14 +32,14 @@ const userSchema = new mongoose.Schema({
                 type: String,
                 default: null,
             },
-        },
-        provisionalPassword: {
-            type: String,
-            default: null,
-        },
-        expiry: {
-            type: Date,
-            default: null,
+            provisionalPassword: {
+                type: String,
+                default: null,
+            },
+            expiry: {
+                type: Date,
+                default: null,
+            },
         },
     },
 });
